@@ -21,51 +21,76 @@
 }
 
 .typing p {
-  border-right: .15em solid orange;
+  border-right: .15em solid #ffbd4a;
   white-space: nowrap;
   overflow: hidden;
   width: fit-content;
 }
+
+
 .typing p:nth-child(1) {
   color: #ffbd4a;
-  width: 4em;
-  font-size: 3em;
-  font-weight: bold;
-  animation: type 2s steps(25, end);
-  animation-fill-mode: forwards;
-
-}
-
-.typing p:nth-child(2) {
-  color: #ffbd4a;
-  width: 8.5em;
+  width: 9.5em;
   font-size: 3em;
   font-weight: bold;
   opacity: 0;
-  animation: type2 2s steps(25, end);
-  animation-delay: 2s;
+  animation: type2 1s steps(20, end);
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  
+}
+
+.typing p:nth-child(2) {
+  width: 16em;
+  font-size: 1.6em;
+  opacity: 0;
+  animation: type3 1s steps(20, end);
+  animation-delay: 1.6s;
   animation-fill-mode: forwards;
   
 }
 
 .typing p:nth-child(3) {
-  width: 17em;
-  font-size: 1.6em;
+  width: 18.5em;
+  font-size: 1.38em;
   opacity: 0;
-  animation: type3 2s steps(20, end);
-  animation-delay: 5s;
+  animation: type4 1s steps(20, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 3.1s;
   animation-fill-mode: forwards;
-  
 }
 
-.typing p:nth-child(4) {
-  width: 22em;
-  font-size: 1.2em;
-  opacity: 0;
-  animation: type4 2s steps(20, end), blink .5s step-end infinite alternate;
-  animation-delay: 8s;
-  animation-fill-mode: forwards;
+@media(max-width: 500px) {
+  .typing p:nth-child(1) {
+    width: 8.1em;
+    font-size: 2.5em;
+  }
   
+  .typing p:nth-child(2) {
+    width: 16em;
+    font-size: 1.3em;
+  }
+  
+  .typing p:nth-child(3) {
+    width: 18.5em;
+    font-size: 1.14em;
+  }
+}
+
+@media(max-width: 400px) {
+  .typing p:nth-child(1) {
+    width: 8.1em;
+    font-size: 2.2em;
+  }
+  
+  .typing p:nth-child(2) {
+    width: 16em;
+    font-size: 1.13em;
+  }
+  
+  .typing p:nth-child(3) {
+    width: 18.5em;
+    font-size: 1em;
+  }
 }
 
 @keyframes type {
@@ -73,7 +98,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid #ffbd4a;
   }
   100% {
     border: none;
@@ -88,7 +113,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid #ffbd4a;
   }
   100% {
     opacity: 1;
@@ -104,7 +129,7 @@
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid #ffbd4a;
   }
   100% {
     opacity: 1;
@@ -126,6 +151,32 @@
 
 @keyframes blink {
   50% {
+    border-color: #ffbd4a;
+  }
+  50% {
     border-color: transparent;
   }
+}
+
+.down{
+  animation: arrow 2.5s infinite alternate;
+  animation-fill-mode: forwards;
+  animation-delay: 3.6s;
+}
+
+@keyframes arrow {
+  0% {
+    top: 40vh;;
+  }
+  10% {
+    top: 41vh;;
+  }
+  30% {
+    top: 40vh;;
+  }
+}
+
+.textAboutMe p:nth-child(1) {
+  margin-top:2vw;
+  color:red;
 }
