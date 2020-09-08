@@ -5,6 +5,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body{
+  background-color: #000000f0;
+  animation: gradient 10s linear infinite alternate;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 ::-webkit-scrollbar-track {
   background-color: #F4F4F4;
 }
@@ -20,6 +27,29 @@
   background: #000000fa;
 }
 
+#nav{
+  background-color: #8d9977;
+
+}
+#aboutMe{
+  background-color: #8d9977;
+}
+#stack{
+  background-color: #60a080;
+}
+#education{
+  background-color: #4c574e;
+}
+#projects{
+  background-color: #ffffff;
+}
+#hireMe{
+  background-color: #8d9977;
+}
+#footer{
+  background-color: #4c574e;
+}
+
 .typing p {
   border-right: .15em solid #ffbd4a;
   white-space: nowrap;
@@ -29,7 +59,6 @@
 
 
 .typing p:nth-child(1) {
-  color: #ffbd4a;
   width: 9.5em;
   font-size: 3em;
   font-weight: bold;
@@ -166,13 +195,13 @@
 
 @keyframes arrow {
   0% {
-    top: 40vh;;
+    top: 30vh;;
   }
   10% {
-    top: 41vh;;
+    top: 31vh;;
   }
   30% {
-    top: 40vh;;
+    top: 30vh;;
   }
 }
 
@@ -180,3 +209,13 @@
   margin-top:2vw;
   color:red;
 }
+
+.animation-gradient{
+  background-color: #000000f0;
+  animation: gradient 10s linear infinite alternate;
+}
+@keyframes gradient {
+  0%{background-color: #009688}
+  50%{background-color: #673AB7}
+  100%{background-color: #4605ff}
+  }
