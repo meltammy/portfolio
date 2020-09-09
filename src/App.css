@@ -195,13 +195,13 @@ body{
 
 @keyframes arrow {
   0% {
-    top: 30vh;;
+    top: 0vh;;
   }
   10% {
-    top: 31vh;;
+    top: 1vh;;
   }
   30% {
-    top: 30vh;;
+    top: 0vh;;
   }
 }
 
@@ -219,3 +219,13 @@ body{
   50%{background-color: #673AB7}
   100%{background-color: #4605ff}
   }
+
+.socialIntro{
+  flex-direction: column;
+  height: 35vh;
+  margin-right: 3vw;
+}
+
+.socialContact{
+  flex-direction: row;
+}

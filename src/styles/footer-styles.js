@@ -6,7 +6,6 @@ export const Footer = styled.div`
 width: 100%;
 height: 10vh;
 display: flex;
-flex-direction: column;
+padding-left: 5vw;
 align-items: center;
-scroll-snap-align: start;
 `

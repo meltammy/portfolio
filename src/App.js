@@ -1,8 +1,13 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
+
 import mel3 from './img/mel3.png'
 import bio from './img/bio.jpg'
+import front from './img/front.png'
+import back from './img/back.png'
+import tools from './img/tools.png'
+
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -11,13 +16,13 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
 import { Header, LinkHeader, SocialBar } from './styles/header-styles'
-import { Introduction, Apresentation, Arrow } from './styles/intro-styles'
+import { Introduction, Apresentation, Arrow, ArrowContainer, ApresentationContainer } from './styles/intro-styles'
 import { AboutMe, PhotoContainer, Photo, TextAboutMe, CV } from './styles/aboutMe-styles'
 import { HireMe } from './styles/hireMe-styles'
-import { Education } from './styles/education-styles'
-import { Projects } from './styles/projects-styles'
+import { Education, EducationContainer, MainEducationContainer, LogoContainer } from './styles/education-styles'
+import { Projects, Pc, Note, Ipad, ProjectContainer, TextContainer } from './styles/projects-styles'
 import { Footer } from './styles/footer-styles'
-import { Stack } from './styles/stack-styles'
+import { Stack, StackContainer, MainStackContainer } from './styles/stack-styles'
 
 
 
@@ -41,19 +46,26 @@ function App() {
   return (
     <Container className='background-color'>
       <Introduction >
-        <Apresentation>
-          <p>Oi, eu sou a Mel</p>
-          <p>Desenvolvedora Web Full Stack</p>
-        </Apresentation>
-        {/* <SocialBar>
-          <LinkedInIcon style={{ fontSize: 30 }}></LinkedInIcon>
-          <GitHubIcon style={{ fontSize: 30 }}></GitHubIcon>
-          <WhatsAppIcon style={{ fontSize: 30 }}></WhatsAppIcon>
-          <TwitterIcon style={{ fontSize: 30 }}></TwitterIcon>
-          <InstagramIcon style={{ fontSize: 30 }}></InstagramIcon>
-        </SocialBar> */}
-        <Arrow className='down'></Arrow>
-        <Arrow className='down'></Arrow>
+        <ApresentationContainer>
+          <div></div>
+          <Apresentation>
+            <p>Oi, eu sou a Mel</p>
+            <p>Desenvolvedora Web Full Stack</p>
+          </Apresentation>
+          <SocialBar className='socialIntro'>
+            <LinkedInIcon style={{ fontSize: 30 }}></LinkedInIcon>
+            <GitHubIcon style={{ fontSize: 30 }}></GitHubIcon>
+            <WhatsAppIcon style={{ fontSize: 30 }}></WhatsAppIcon>
+            <TwitterIcon style={{ fontSize: 30 }}></TwitterIcon>
+            <InstagramIcon style={{ fontSize: 30 }}></InstagramIcon>
+          </SocialBar>
+        </ApresentationContainer>
+
+        <ArrowContainer className='down'>
+          <Arrow></Arrow>
+          <Arrow></Arrow>
+        </ArrowContainer>
+
       </Introduction>
       <Header id='nav'>
         <LinkHeader href="#aboutMe">Quem sou</LinkHeader>
@@ -66,21 +78,146 @@ function App() {
         </PhotoContainer>
         <TextAboutMe className='textAboutMe'>
           <h1> Melissa Tammy</h1>
-          <p>sou desenvolvedora Web Full Stack, estudante de Análise e Desenvolvimento de sistemas, ex-aluna de Ciências biológicas e fotógrafa por hobby.</p>
-          {/*<p>Gosto de entender o porquê das coisas e como o mundo funciona, o que me levou a cursar alguns semestres de ciências biológicas após o termino do ensino médio.</p>
-          <p>No meio do caminho encontrei a programação, comecei a estudar por pura curiosidade e acabei me apaixonando. Tranquei a faculdade de biologia e iniciei a de Análise e Desenvolvimento de Sistemas. A cada semestre descubro mais da área de tecnologia e sinto-me em casa!</p>
-          <p>Em 2020 concluí um curso intensivo de desenvolvimento web full stack, foram mais de 1000 horas de programação, possibilitando a minha formação como desenvolvedora web completa. </p>
-          <h2>ReactJS | NodeJS | MySQL</h2>*/}
+          <p>Desenvolvedora Web Full Stack, estudante de Análise e Desenvolvimento de sistemas, ex-aluna de Ciências biológicas e fotógrafa por hobby.</p>
           <CV>CV em PDF</CV>
         </TextAboutMe>
       </AboutMe>
       <Stack id='stack'>
-        <h1>Meus conhecimentos</h1>
+        <MainStackContainer>
+          <StackContainer>
+            <img src={front}></img>
+            <h1>Front-end</h1>
+            {/* Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
+            <p>Desenvolvimento de aplicações
+            web utilizando HTML, CSS e
+            JavaScript.
+            </p>
+            <p>
+              Criação de sites responsivos
+              seguindo princípio de
+              Mobile First.
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>GIT</li>
+              <li>Testes</li>
+            </ul>
+          </StackContainer>
+          <StackContainer>
+            <img src={back}></img>
+            <h1>Back-end</h1>
+            {/* Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
+            <p>Aplicações utilizando NodeJS,
+            Typescript e MySQL.
+            Criação de API´s para
+            comunicação com front-end
+            seguindo princípio de Clean Code.
+            </p>
+            <ul>
+              <li>Node.js</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>GIT</li>
+              <li>Testes</li>
+            </ul>
+          </StackContainer>
+          <StackContainer>
+            <img src={tools}></img>
+            <h1>Back-end</h1>
+            {/* Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
+            <p>Aplicações utilizando NodeJS,
+            Typescript e MySQL.
+            Criação de API´s para
+            comunicação com front-end
+            seguindo princípio de Clean Code.
+            </p>
+            <ul>
+              <li>Node.js</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>GIT</li>
+              <li>Testes</li>
+            </ul>
+          </StackContainer>
+        </MainStackContainer>
       </Stack>
-      <Education id='education'></Education>
-      <Projects id='projects'></Projects>
-      <HireMe id='hireMe'></HireMe>
-      <Footer id='footer'>©Melissa Tammy</Footer>
+      <Education id='education'>
+        <MainEducationContainer>
+          <EducationContainer>
+            <h1>Desenvolvimento Web Full Stack</h1>
+            <h2>Labenu</h2>
+            <h3>6 meses - 2020</h3>
+            <p>A Labenu é uma startup que forma Desenvolvedores Web Full Stack prontos para o mercado de trabalho. São mais de 1000 horas de programação que faz com que seus alunos sejam profissionais completos tanto no Back-End quanto no Front-End.
+            </p>
+          </EducationContainer>
+          <EducationContainer>
+            <h1>Análise e Desenvolvimento de Sistemas</h1>
+            <h2>Universidade Paulista</h2>
+            <h3>2019 - 2021</h3>
+            <p>
+              O Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas da UNIP forma profissionais capazes de projetar, documentar, especificar, implementar, testar, implantar e manter sistemas computacionais de informação, utilizando modernas ferramentas computacionais, bem como métodos e técnicas avançadas para projetos aplicados durante todo o ciclo de desenvolvimento de sistemas.
+            </p>
+          </EducationContainer>
+          <EducationContainer>
+            <h1>Ciências Biológicas</h1>
+            <h2>Universidade Federal de São Paulo</h2>
+            <h3>2018 - trancado</h3>
+            <p>
+              O curso pretende formar um profissional capacitado em ciências moleculares, celulares e fisiológicas, genética e evolução, botânica, zoologia e ecologia, capaz de entender as complexas relações entre os organismos biológicos e o meio ambiente e consciente da necessidade de atuar com qualidade e responsabilidade em prol da conservação e manejo da biodiversidade e, com isso, contribuir para o desenvolvimento sustentável.</p>
+          </EducationContainer>
+        </MainEducationContainer>
+      </Education>
+      <Projects id='projects'>
+        <ProjectContainer>
+          <Pc></Pc>
+          <TextContainer>
+            <h1>Meelzer</h1>
+            <h2>Full Stack</h2>
+            <p>Projeto Full Stack desenvolvido com React.JS, Node.Js, MySQL</p>
+          </TextContainer>
+        </ProjectContainer>
+        <ProjectContainer>
+          <TextContainer>
+            <h1>Melddit</h1>
+            <h2>Front-end</h2>
+            <p>Projeto Front-end desenvolvido com React.JS, Node.Js, MySQL</p>
+          </TextContainer>
+          <Note></Note>
+
+        </ProjectContainer>
+        <ProjectContainer>
+          <Ipad></Ipad>
+          <TextContainer>
+            <h1>Mel Eats</h1>
+            <h2>Front-end</h2>
+            <p>Projeto Front-end desenvolvido com React.JS, Node.Js, MySQL</p>
+          </TextContainer>
+        </ProjectContainer>
+      </Projects>
+      <HireMe id='hireMe'>
+        <h1>Entre em contato!</h1>
+        <p>Procuro oportunidade de trabalho onde eu possa aprender,
+        me desenvolver e evoluir na minha carreia profissional.
+        </p>
+        <b>E-mail para contato: mel.tammy2@gmail.com
+        </b>
+        <b>
+          Celular: (11) 95373-4273
+        </b>
+        <SocialBar className="socialContact">
+          <LinkedInIcon style={{ fontSize: 30 }}></LinkedInIcon>
+          <GitHubIcon style={{ fontSize: 30 }}></GitHubIcon>
+          <WhatsAppIcon style={{ fontSize: 30 }}></WhatsAppIcon>
+          <TwitterIcon style={{ fontSize: 30 }}></TwitterIcon>
+          <InstagramIcon style={{ fontSize: 30 }}></InstagramIcon>
+        </SocialBar>
+      </HireMe>
+      <Footer id='footer'>©2020 Melissa Tammy</Footer>
     </Container>
   );
 }

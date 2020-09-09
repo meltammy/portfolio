@@ -11,7 +11,7 @@ width: 100%;
 height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
 scroll-snap-align: start;
 background-image:  linear-gradient(#ffffff40, #7575756b, #e61a10e8); 
@@ -25,16 +25,36 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 font-size: 42px;
+margin-left: 3vw;
+
+`
+
+export const ApresentationContainer = styled.div`
+width: 100%;
+display: flex;
+height: fit-content;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 25vh;
+`
+
+
+export const ArrowContainer = styled.div`
+width: 100%;
+height: 5vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+top:0vh;
 `
 
 export const Arrow = styled.div`
 border: 2px #ffffff80 solid;
 width: 10px;
 height: 10px;
-position: relative;
 border-top-color: transparent;
 border-left-color: transparent;
-bottom: 0;
-top: 30vh;
 transform: rotate(45deg);
 `

@@ -13,6 +13,7 @@ color: white;
 justify-content: flex-end;
 align-items: center;
 scroll-snap-align: start;
+z-index: 1;
 `
 
 export const LinkHeader = styled.a`
@@ -23,13 +24,10 @@ text-decoration: none;
 
 export const SocialBar = styled.div`
 width: fit-content;
-height: 35vh;
 display: flex;
-flex-direction: column;
 justify-content: space-between;
 align-items: center;
 position: relative;
-top: 5vw;
 @media(max-width: 500px) {
   left: 90%;
 }

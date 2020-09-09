@@ -6,7 +6,8 @@ import mel2 from '../img/mel2.jpeg'
 
 export const AboutMe = styled.div`
 width: 100%;
-height: 75vh;
+height: fit-content;
+padding-top: 10vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -42,7 +43,8 @@ align-items: center;
 export const Photo = styled.div`
 background: url(${mel2});
 width: 315px;
-height: 330px;
+height: 315px;
+border-radius: 100vw;
 background-position: center;
 background-size: cover;
 @media(max-width: 800px) {
@@ -60,7 +62,7 @@ width:40vw;
 min-height: 330px;
 display: flex;
 flex-direction: column;
-justify-content: flex-end;
+justify-content: center;
 padding-right: 8vw;
 h1{
   font-size:42px;
