@@ -23,31 +23,20 @@ align-items: center;
 `
 
 export const Pc = styled.div`
-width: 20vw;
-height: 20vw;
-background-image: url(${pc});
-background-repeat: no-repeat;
-background-position: center;
-margin: 5vw;
-
+  background-image: url(${pc});
 `
 
 export const Ipad = styled.div`
-width: 20vw;
-height: 20vw;
-background-image: url(${ipad});
-background-repeat: no-repeat;
-background-position: center;
-margin: 5vw;
+  background-image: url(${ipad});
 
 `
 
 export const Note = styled.div`
-width: 23vw;
-height: 20vw;
-background-image: url(${note});
-background-repeat: no-repeat;
-background-position: center;
+  background-image: url(${note});
+
+&&{
+    width: 23vw;
+}
 `
 
 export const TextContainer = styled.div`
@@ -58,7 +47,7 @@ h1{
 
 }
 h2{
-    
+
 }
 p{
 

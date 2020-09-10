@@ -14,7 +14,6 @@ flex-direction: column;
 justify-content: flex-end;
 align-items: center;
 scroll-snap-align: start;
-background-image:  linear-gradient(#ffffff40, #7575756b, #e61a10e8); 
 color: white;
 `
 

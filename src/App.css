@@ -6,8 +6,9 @@
 }
 
 body{
-  background-color: #000000f0;
+  background-color: #1d1d1d;
   animation: gradient 10s linear infinite alternate;
+  background-image:  linear-gradient(#ffffff40, #7575756b, #e61a10e8); 
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -26,7 +27,7 @@ body{
 ::-webkit-scrollbar-track-piece{
   background: #000000fa;
 }
-
+/* 
 #nav{
   background-color: #8d9977;
 
@@ -48,7 +49,7 @@ body{
 }
 #footer{
   background-color: #4c574e;
-}
+} */
 
 .typing p {
   border-right: .15em solid #ffbd4a;
@@ -228,4 +229,13 @@ body{
 
 .socialContact{
   flex-direction: row;
+}
+
+.projectImage{
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 5vw;
+  background-size: contain;
 }

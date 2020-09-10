@@ -174,7 +174,7 @@ function App() {
       </Education>
       <Projects id='projects'>
         <ProjectContainer>
-          <Pc></Pc>
+          <Pc className="projectImage"></Pc>
           <TextContainer>
             <h1>Meelzer</h1>
             <h2>Full Stack</h2>
@@ -187,11 +187,11 @@ function App() {
             <h2>Front-end</h2>
             <p>Projeto Front-end desenvolvido com React.JS, Node.Js, MySQL</p>
           </TextContainer>
-          <Note></Note>
+          <Note className="projectImage"></Note>
 
         </ProjectContainer>
         <ProjectContainer>
-          <Ipad></Ipad>
+          <Ipad className="projectImage"></Ipad>
           <TextContainer>
             <h1>Mel Eats</h1>
             <h2>Front-end</h2>
