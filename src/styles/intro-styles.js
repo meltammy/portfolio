@@ -15,6 +15,8 @@ justify-content: flex-end;
 align-items: center;
 scroll-snap-align: start;
 color: white;
+font-family: 'Raleway', sans-serif;
+
 `
 
 export const Apresentation = styled.div`
@@ -35,6 +37,7 @@ height: fit-content;
 align-items: center;
 justify-content: space-between;
 margin-bottom: 25vh;
+
 `
 
 

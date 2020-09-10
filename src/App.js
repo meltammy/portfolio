@@ -46,10 +46,11 @@ function App() {
   return (
     <Container className='background-color'>
       <Introduction >
+        <span></span>
         <ApresentationContainer>
           <div></div>
           <Apresentation>
-            <p>Oi, eu sou a Mel</p>
+            <p>Oi, eu sou a <b>Mel</b></p>
             <p>Desenvolvedora Web Full Stack</p>
           </Apresentation>
           <SocialBar className='socialIntro'>
