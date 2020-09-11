@@ -1,12 +1,11 @@
 import React from 'react';
-import '../App.css';
 import styled from 'styled-components'
 
 export const Education = styled.div`
 width: 100%;
-min-height: 100vw;
 height: fit-content;
 padding-top: 10vw;
+padding-bottom: 10vw;
 display: flex;
 flex-direction: column;
 align-items: center;

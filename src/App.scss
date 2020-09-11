@@ -10,7 +10,6 @@ body{
   /* animation: gradient 10s linear infinite alternate;
   background-image:  linear-gradient(#ffffff40, #7575756b, #e61a10e8);  */
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,14 +28,14 @@ body{
 }
 
 #nav{
-  background-color: #8d9977;
+  background-color: #1d1d1d;
 
 }
 #aboutMe{
-  background-color: #8d9977;
+  background-color: #1d1d1d;
 }
 #stack{
-  background-color: #60a080;
+  background-color: #ffbd4a;
 }
 #education{
   background-color: #4c574e;
@@ -88,6 +87,17 @@ body{
   flex-direction: column;
   height: 35vh;
   margin-right: 3vw;
+  @media(max-width: 800px) {
+    height: 15vw;
+    flex-direction: row;
+    margin-right: 0;
+    width: 30vw;
+    left: 0;
+    }
+    @media(max-width: 500px) {
+      width: 50vw;
+      height: 25vw;
+    }
 }
 
 .socialContact{
@@ -105,36 +115,73 @@ body{
 
 .background-color {
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 .background-color p:nth-child(1){
   font-size: 60pt;
   font-family: 'Raleway', sans-serif;
+  @media(max-width: 500px) {
+    font-size: 35pt;
+    }
+    @media(max-width: 400px) {
+      font-size: 30pt;
+      }
 }
 .background-color p:nth-child(2){
   font-family: 'Raleway', sans-serif;
   font-size: 30pt;
   font-weight: 200;
+  @media(max-width: 500px) {
+    font-size: 18pt;
+    }
+    @media(max-width: 400px) {
+      font-size: 15pt;
+      }
 }
 .background-color b:first-child{
   color: #ffbd4a;
   font-weight: normal;
 }
-.background-color span:nth-child(1){
-  position: relative;
-  top: 79vh;
-  left: 45vw;
-  width: 0; 
-  height: 0; 
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  z-index: -1;
+}
+
+$animationDuration: 100s;
+$amount: 40;
+
+.background span {
+  width: 0;
+  height: 0;
+  top: 105vh;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
   border-left: 25px solid #ffbd4a;
-  animation: square1 10s linear infinite;
-}
+  backface-visibility: hidden;
+  position: relative;
+  animation-name: square1;
+  animation-duration: $animationDuration;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      left: $i * 1%;
+      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+    }
+  }
 
+}
 
 @keyframes square1 {
   100%{
-    top: -50vh;
+    opacity: 0;
+    top: 30vh;
     transform: translate3d(0, 0, 1px) rotate(660deg);
   }
   }

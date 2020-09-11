@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import styled from 'styled-components'
 
 export const Header = styled.div`
@@ -23,12 +22,8 @@ text-decoration: none;
 `
 
 export const SocialBar = styled.div`
-width: fit-content;
 display: flex;
 justify-content: space-between;
 align-items: center;
 position: relative;
-@media(max-width: 500px) {
-  left: 90%;
-}
 `

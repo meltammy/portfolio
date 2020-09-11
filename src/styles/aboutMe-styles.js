@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import styled from 'styled-components'
 
 import mel2 from '../img/mel2.jpeg'

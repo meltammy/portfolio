@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 import styled from 'styled-components'
 
 import mel3 from '../img/mel3.png'
@@ -37,7 +36,9 @@ height: fit-content;
 align-items: center;
 justify-content: space-between;
 margin-bottom: 25vh;
-
+@media(max-width: 800px) {
+flex-direction: column;
+}
 `
 
 
@@ -50,6 +51,9 @@ justify-content: center;
 align-items: center;
 position: relative;
 top:0vh;
+@media(max-width: 800px) {
+height: 12vw;
+}
 `
 
 export const Arrow = styled.div`
