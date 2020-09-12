@@ -2,11 +2,8 @@ import React from 'react';
 import './App.scss';
 import styled from 'styled-components'
 
-import mel3 from './img/mel3.png'
-import bio from './img/bio.jpg'
 import front from './img/front.png'
 import back from './img/back.png'
-import tools from './img/tools.png'
 
 
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -17,12 +14,11 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 import { Header, LinkHeader, SocialBar } from './styles/header-styles'
 import { Introduction, Apresentation, Arrow, ArrowContainer, ApresentationContainer } from './styles/intro-styles'
-import { AboutMe, PhotoContainer, Photo, TextAboutMe, CV } from './styles/aboutMe-styles'
-import { HireMe } from './styles/hireMe-styles'
-import { Education, EducationContainer, MainEducationContainer, LogoContainer } from './styles/education-styles'
-import { Projects, Pc, Note, Ipad, ProjectContainer, TextContainer } from './styles/projects-styles'
+import { AboutMe, TextAboutMe, CV } from './styles/aboutMe-styles'
+import { HireMe, ContactContainer } from './styles/hireMe-styles'
+import { Projects, Pc, Note, Ipad, ProjectContainer, TextContainer, ButtonProject } from './styles/projects-styles'
 import { Footer } from './styles/footer-styles'
-import { Stack, StackContainer, MainStackContainer } from './styles/stack-styles'
+import { Stack, StackContainer, MainStackContainer, ListContainer } from './styles/stack-styles'
 
 
 
@@ -32,21 +28,16 @@ max-height: 100vh;
 overflow-y: scroll;
 scroll-snap-points-y: repeat(3rem);
 scroll-snap-type: y proximity;
-`
+overflow-x: hidden;
 
-const Bio = styled.img`
-background-image: url(${bio});
-width: 100%;
-height: 100%;
-z-index:-5;
 `
 
 function App() {
 
   return (
     <Container className='background-color'>
-      <Introduction >
-      <div className='background'>        
+      <Introduction id='intro'>
+        <div className='background'>
           <span />
           <span />
           <span />
@@ -95,11 +86,11 @@ function App() {
             <p>Desenvolvedora Web Full Stack</p>
           </Apresentation>
           <SocialBar className='socialIntro'>
-            <LinkedInIcon style={{ fontSize: 30 }}></LinkedInIcon>
-            <GitHubIcon style={{ fontSize: 30 }}></GitHubIcon>
-            <WhatsAppIcon style={{ fontSize: 30 }}></WhatsAppIcon>
-            <TwitterIcon style={{ fontSize: 30 }}></TwitterIcon>
-            <InstagramIcon style={{ fontSize: 30 }}></InstagramIcon>
+            <a href='https://www.linkedin.com/in/meltammy/'><LinkedInIcon style={{ fontSize: 30 }} /></a>
+            <a href='https://github.com/meltammy'><GitHubIcon style={{ fontSize: 30 }} /></a>
+            <a href='https://api.whatsapp.com/send?phone=5511953734273'><WhatsAppIcon style={{ fontSize: 30 }} /></a>
+            <a href='https://twitter.com/meltammy_'> <TwitterIcon style={{ fontSize: 30 }} /></a>
+            <a href='https://www.instagram.com/meltammy/'><InstagramIcon style={{ fontSize: 30 }} /></a>
           </SocialBar>
         </ApresentationContainer>
 
@@ -115,9 +106,6 @@ function App() {
         <LinkHeader href="#hireMe">Contato</LinkHeader>
       </Header>
       <AboutMe id='aboutMe'>
-        <PhotoContainer>
-          <Photo />
-        </PhotoContainer>
         <TextAboutMe className='textAboutMe'>
           <h1> Melissa Tammy</h1>
           <p>Desenvolvedora Web Full Stack, estudante de Análise e Desenvolvimento de sistemas, ex-aluna de Ciências biológicas e fotógrafa por hobby.</p>
@@ -131,22 +119,9 @@ function App() {
             <h1>Front-end</h1>
             {/* Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
             <p>Desenvolvimento de aplicações
-            web utilizando HTML, CSS e
+            web responsivas utilizando HTML, CSS e
             JavaScript.
             </p>
-            <p>
-              Criação de sites responsivos
-              seguindo princípio de
-              Mobile First.
-            </p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>GIT</li>
-              <li>Testes</li>
-            </ul>
           </StackContainer>
           <StackContainer>
             <img src={back}></img>
@@ -154,66 +129,30 @@ function App() {
             {/* Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
             <p>Aplicações utilizando NodeJS,
             Typescript e MySQL.
-            Criação de API´s para
-            comunicação com front-end
-            seguindo princípio de Clean Code.
+            Criação de API's para
+            comunicação com front-end.
             </p>
-            <ul>
-              <li>Node.js</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>GIT</li>
-              <li>Testes</li>
-            </ul>
           </StackContainer>
-          <StackContainer>
-            <img src={tools}></img>
-            <h1>Back-end</h1>
-            {/* Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
-            <p>Aplicações utilizando NodeJS,
-            Typescript e MySQL.
-            Criação de API´s para
-            comunicação com front-end
-            seguindo princípio de Clean Code.
-            </p>
-            <ul>
-              <li>Node.js</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>GIT</li>
-              <li>Testes</li>
-            </ul>
-          </StackContainer>
+          <ListContainer>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React.js</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Express</span>
+            <span>Node.js</span>
+            <span>SQL</span>
+            <span>TypeScript</span>
+            <span>C#</span>
+            <span>C</span>
+            <span>Jest</span>
+            <span>Testes</span>
+          </ListContainer>
+
+
         </MainStackContainer>
       </Stack>
-      <Education id='education'>
-        <MainEducationContainer>
-          <EducationContainer>
-            <h1>Desenvolvimento Web Full Stack</h1>
-            <h2>Labenu</h2>
-            <h3>6 meses - 2020</h3>
-            <p>A Labenu é uma startup que forma Desenvolvedores Web Full Stack prontos para o mercado de trabalho. São mais de 1000 horas de programação que faz com que seus alunos sejam profissionais completos tanto no Back-End quanto no Front-End.
-            </p>
-          </EducationContainer>
-          <EducationContainer>
-            <h1>Análise e Desenvolvimento de Sistemas</h1>
-            <h2>Universidade Paulista</h2>
-            <h3>2019 - 2021</h3>
-            <p>
-              O Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas da UNIP forma profissionais capazes de projetar, documentar, especificar, implementar, testar, implantar e manter sistemas computacionais de informação, utilizando modernas ferramentas computacionais, bem como métodos e técnicas avançadas para projetos aplicados durante todo o ciclo de desenvolvimento de sistemas.
-            </p>
-          </EducationContainer>
-          <EducationContainer>
-            <h1>Ciências Biológicas</h1>
-            <h2>Universidade Federal de São Paulo</h2>
-            <h3>2018 - trancado</h3>
-            <p>
-              O curso pretende formar um profissional capacitado em ciências moleculares, celulares e fisiológicas, genética e evolução, botânica, zoologia e ecologia, capaz de entender as complexas relações entre os organismos biológicos e o meio ambiente e consciente da necessidade de atuar com qualidade e responsabilidade em prol da conservação e manejo da biodiversidade e, com isso, contribuir para o desenvolvimento sustentável.</p>
-          </EducationContainer>
-        </MainEducationContainer>
-      </Education>
       <Projects id='projects'>
         <ProjectContainer>
           <Pc className="projectImage"></Pc>
@@ -221,6 +160,8 @@ function App() {
             <h1>Meelzer</h1>
             <h2>Full Stack</h2>
             <p>Projeto Full Stack desenvolvido com React.JS, Node.Js, MySQL</p>
+            <ButtonProject>Ver no GitHub</ButtonProject>
+
           </TextContainer>
         </ProjectContainer>
         <ProjectContainer>
@@ -228,6 +169,8 @@ function App() {
             <h1>Melddit</h1>
             <h2>Front-end</h2>
             <p>Projeto Front-end desenvolvido com React.JS, Node.Js, MySQL</p>
+            <ButtonProject>Ver no GitHub</ButtonProject>
+
           </TextContainer>
           <Note className="projectImage"></Note>
 
@@ -238,25 +181,30 @@ function App() {
             <h1>Mel Eats</h1>
             <h2>Front-end</h2>
             <p>Projeto Front-end desenvolvido com React.JS, Node.Js, MySQL</p>
+            <ButtonProject>Ver no GitHub</ButtonProject>
           </TextContainer>
         </ProjectContainer>
       </Projects>
       <HireMe id='hireMe'>
         <h1>Entre em contato!</h1>
         <p>Procuro oportunidade de trabalho onde eu possa aprender,
-        me desenvolver e evoluir na minha carreia profissional.
         </p>
-        <b>E-mail para contato: mel.tammy2@gmail.com
+        <p>me desenvolver e evoluir na minha carreia profissional.
+        </p>
+        <ContactContainer>
+          <b>E-mail para contato: mel.tammy2@gmail.com
         </b>
-        <b>
-          Celular: (11) 95373-4273
+          <b>
+            Celular: (11) 95373-4273
         </b>
-        <SocialBar className="socialContact">
-          <LinkedInIcon style={{ fontSize: 30 }}></LinkedInIcon>
-          <GitHubIcon style={{ fontSize: 30 }}></GitHubIcon>
-          <WhatsAppIcon style={{ fontSize: 30 }}></WhatsAppIcon>
-          <TwitterIcon style={{ fontSize: 30 }}></TwitterIcon>
-          <InstagramIcon style={{ fontSize: 30 }}></InstagramIcon>
+        </ContactContainer>
+
+        <SocialBar className="social-hireMe">
+          <a href='https://www.linkedin.com/in/meltammy/'><LinkedInIcon style={{ fontSize: 30 }} /></a>
+          <a href='https://github.com/meltammy'><GitHubIcon style={{ fontSize: 30 }} /></a>
+          <a href='https://api.whatsapp.com/send?phone=5511953734273'><WhatsAppIcon style={{ fontSize: 30 }} /></a>
+          <a href='https://twitter.com/meltammy_'> <TwitterIcon style={{ fontSize: 30 }} /></a>
+          <a href='https://www.instagram.com/meltammy/'><InstagramIcon style={{ fontSize: 30 }} /></a>
         </SocialBar>
       </HireMe>
       <Footer id='footer'>©2020 Melissa Tammy</Footer>
