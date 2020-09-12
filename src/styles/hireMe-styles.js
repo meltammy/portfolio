@@ -12,17 +12,25 @@ justify-content: space-evenly;
 align-items: center;
 scroll-snap-align: start;
 text-align: center;
-h1{
-    font-size: 38px;
-    margin-bottom: 4vh;
+color: #ffffff;
 
+h1{
+    font-size: 30pt;
+    margin-bottom: 4vh;
+    color: #ffbd4a;
 }
 p{
     font-size: 22px;
-    width: 50%;
+    font-size: 20pt;
+
 }
 b{
     font-size: 22px;
-    width: 50%;
+    font-weight: normal;
 }
+`
+export const ContactContainer = styled.div`
+margin-top:5vw;
+display:flex;
+flex-direction:column;
 `

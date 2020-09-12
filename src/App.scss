@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 body{
@@ -27,29 +28,6 @@ body{
   background: #000000fa;
 }
 
-#nav{
-  background-color: #1d1d1d;
-
-}
-#aboutMe{
-  background-color: #1d1d1d;
-}
-#stack{
-  background-color: #ffbd4a;
-}
-#education{
-  background-color: #4c574e;
-}
-#projects{
-  background-color: #ffffff;
-}
-#hireMe{
-  background-color: #8d9977;
-}
-#footer{
-  background-color: #4c574e;
-} 
-
 .down{
   animation: arrow 2.5s infinite alternate;
   animation-fill-mode: forwards;
@@ -68,20 +46,6 @@ body{
   }
 }
 
-.textAboutMe p:nth-child(1) {
-  margin-top:2vw;
-  color:red;
-}
-
-.animation-gradient{
-  background-color: #000000f0;
-  animation: gradient 10s linear infinite alternate;
-}
-@keyframes gradient {
-  0%{background-color: #009688}
-  50%{background-color: #673AB7}
-  100%{background-color: #4605ff}
-  }
 
 .socialIntro{
   flex-direction: column;
@@ -100,8 +64,11 @@ body{
     }
 }
 
-.socialContact{
+.social-hireMe{
   flex-direction: row;
+  width: 25vw;
+  height: 15vw;
+
 }
 
 .projectImage{
@@ -113,13 +80,8 @@ body{
   background-size: contain;
 }
 
-.background-color {
-  font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
-}
-.background-color p:nth-child(1){
+#intro p:nth-child(1){
   font-size: 60pt;
-  font-family: 'Raleway', sans-serif;
   @media(max-width: 500px) {
     font-size: 35pt;
     }
@@ -127,7 +89,7 @@ body{
       font-size: 30pt;
       }
 }
-.background-color p:nth-child(2){
+#intro p:nth-child(2){
   font-family: 'Raleway', sans-serif;
   font-size: 30pt;
   font-weight: 200;
@@ -138,7 +100,7 @@ body{
       font-size: 15pt;
       }
 }
-.background-color b:first-child{
+#intro b:first-child{
   color: #ffbd4a;
   font-weight: normal;
 }
@@ -185,3 +147,4 @@ $amount: 40;
     transform: translate3d(0, 0, 1px) rotate(660deg);
   }
   }
+
