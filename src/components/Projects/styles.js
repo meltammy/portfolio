@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import pc from '../img/pc.png'
-import note from '../img/note.png'
-import ipad from '../img/ipad.png'
+import pc from '../../img/pc.png'
+import note from '../../img/note.png'
+import ipad from '../../img/ipad.png'
 
-export const Projects = styled.div`
+export const Container = styled.div`
 width: 100%;
 height: fit-content;
 padding-top: 10vh;
@@ -13,9 +13,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 scroll-snap-align: start;
-background-color: #ffffff;
-box-shadow: 0 -6px 12px black;
-
+background-color: ${props => (props.darkMode ? '#ffffff' : '#ffbd4a')};
+box-shadow: ${props => (props.darkMode ? '0 -6px 12px black' : '0 -6px 12px #00000057')};
 `
 
 export const ProjectContainer = styled.div`
@@ -63,7 +62,6 @@ min-height:fit-content;
 min-width:fit-content;
 padding:1vh;
 margin-top:1vw;
-background-color: #ffbd4a;
 border:none;
 border: 1px #402F12 solid;
 border-radius:8px;
@@ -71,6 +69,8 @@ font-size:1rem;
 transition: 0.5s;
 box-shadow: 0px 2px 6px 0px black;
 outline: none;
+color: white;
+background-color: #105FB3;
 
 :hover{
 color: white;

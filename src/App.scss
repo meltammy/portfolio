@@ -3,14 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
-
-}
-
-body{
-  background-color: #1d1d1d;
-  /* animation: gradient 10s linear infinite alternate;
-  background-image:  linear-gradient(#ffffff40, #7575756b, #e61a10e8);  */
-  background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar-track {
@@ -46,7 +38,6 @@ body{
   }
 }
 
-
 .socialIntro{
   flex-direction: column;
   height: 35vh;
@@ -58,17 +49,16 @@ body{
     width: 30vw;
     left: 0;
     }
-    @media(max-width: 500px) {
-      width: 50vw;
-      height: 25vw;
-    }
+  @media(max-width: 500px) {
+    width: 50vw;
+    height: 25vw;
+  }
 }
 
 .social-hireMe{
   flex-direction: row;
   width: 25vw;
   height: 15vw;
-
 }
 
 .projectImage{
@@ -85,9 +75,9 @@ body{
   @media(max-width: 500px) {
     font-size: 35pt;
     }
-    @media(max-width: 400px) {
-      font-size: 30pt;
-      }
+  @media(max-width: 400px) {
+    font-size: 30pt;
+  }
 }
 #intro p:nth-child(2){
   font-family: 'Raleway', sans-serif;
@@ -96,9 +86,9 @@ body{
   @media(max-width: 500px) {
     font-size: 18pt;
     }
-    @media(max-width: 400px) {
-      font-size: 15pt;
-      }
+  @media(max-width: 400px) {
+    font-size: 15pt;
+  }
 }
 #intro b:first-child{
   color: #ffbd4a;
@@ -116,7 +106,6 @@ body{
 
 $animationDuration: 100s;
 $amount: 40;
-
 .background span {
   width: 0;
   height: 0;
@@ -126,7 +115,7 @@ $amount: 40;
   border-left: 25px solid #ffbd4a;
   backface-visibility: hidden;
   position: relative;
-  animation-name: square1;
+  animation-name: nacho;
   animation-duration: $animationDuration;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -137,14 +126,13 @@ $amount: 40;
       animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
     }
   }
-
 }
 
-@keyframes square1 {
+@keyframes nacho {
   100%{
     opacity: 0;
     top: 30vh;
     transform: translate3d(0, 0, 1px) rotate(660deg);
   }
-  }
+}
 

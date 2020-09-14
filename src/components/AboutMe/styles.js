@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import aboutme2 from '../img/aboutme2.png'
+import aboutme2 from '../../img/aboutme2.png'
 
-export const AboutMe = styled.div`
+export const Container = styled.div`
 background: url(${aboutme2});
 background-position: center;
 background-size: cover;
@@ -14,7 +14,6 @@ justify-content: center;
 align-items: center;
 scroll-snap-align: start;
 font-family: 'Raleway', sans-serif;
-background-color: #1d1d1d;
 @media(max-width: 800px) {
   height: 100vh;
 }
@@ -86,7 +85,7 @@ min-height:fit-content;
 min-width:fit-content;
 padding:1.5vh;
 margin-top:5vw;
-background-color: #1d1d1d;
+background-color: #105FB3;
 border:none;
 border: 1px #402F12 solid;
 border-radius:8px;
