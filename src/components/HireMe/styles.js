@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-export const HireMe = styled.div`
+export const Container = styled.div`
 width: 100%;
 height: fit-content;
 padding-top: 10vh;
@@ -12,7 +12,7 @@ justify-content: space-evenly;
 align-items: center;
 scroll-snap-align: start;
 text-align: center;
-color: #ffffff;
+color: ${props => (props.darkMode ? 'white' : 'black')};
 
 h1{
     font-size: 30pt;
