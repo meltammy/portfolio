@@ -106,6 +106,7 @@ background-color: #105FB3;
 a{
     text-decoration:none;
     color:white;
+    width: 100%;
 }
 :hover{
 color: white;

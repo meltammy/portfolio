@@ -48,17 +48,6 @@ b{
         font-size: 12pt;
     }
 }
-@media(max-width: 450px) {
-    h1{
-        font-size: 18pt;
-    }
-    p{
-        font-size: 9pt;
-    }
-    b{
-        font-size: 9pt;
-    }
-}
 `
 export const ContactContainer = styled.div`
 margin-top:6vh;
