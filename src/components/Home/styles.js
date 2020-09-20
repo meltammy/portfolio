@@ -23,12 +23,16 @@ export const DarkMode = styled(IconButton)`
     color:#ffbd4a
     };
     @media(max-width: 800px) {
-        &&{top: -10vh;
-        left: 45vw;}
-    }
-    @media(max-width: 800px) {
         &&{top: -24vh;
         left: 45vw;}
+    }
+    @media(max-width: 615px) {
+        &&{top: -30vh;
+        }
+    }
+    @media(max-width: 400px) {
+        &&{top: -38vh;
+        }
     }
 `
 
@@ -52,6 +56,10 @@ justify-content: space-between;
 margin-bottom: 25vh;
 @media(max-width: 800px) {
 flex-direction: column;
+margin-bottom: 12vh;
+}
+@media(max-width: 615px) {
+margin-bottom: 20vh;
 }
 `
 

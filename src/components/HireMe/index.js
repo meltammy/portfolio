@@ -13,7 +13,7 @@ function HireMe(props) {
             <p>me desenvolver e evoluir na minha carreia profissional.
             </p>
             <ContactContainer>
-                <b>E-mail para contato: mel.tammy2@gmail.com
+                <b>E-mail: mel . tammy2@gmail.com
                 </b>
                 <b>
                     Celular: (11) 95373-4273

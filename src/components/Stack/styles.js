@@ -44,6 +44,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
+text-align: center;
 @media(max-width: 500px) {
     width: 80%;
     margin-top: 6vw;
