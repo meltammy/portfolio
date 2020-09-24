@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4cdbf78a.chunk.css",
-    "main.js": "/portfolio/static/js/main.9e454679.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9e454679.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.ea3d5762.chunk.js": "/portfolio/static/js/2.ea3d5762.chunk.js",
-    "static/js/2.ea3d5762.chunk.js.map": "/portfolio/static/js/2.ea3d5762.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.88d25de0eca50dc450cfda66063124e2.js": "/portfolio/precache-manifest.88d25de0eca50dc450cfda66063124e2.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.4cdbf78a.chunk.css.map": "/portfolio/static/css/main.4cdbf78a.chunk.css.map",
-    "static/js/2.ea3d5762.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ea3d5762.chunk.js.LICENSE.txt",
-    "static/media/Meltammy_curriculo.pdf": "/portfolio/static/media/Meltammy_curriculo.dd88fa0a.pdf",
-    "static/media/aboutme2.png": "/portfolio/static/media/aboutme2.62ac87e8.png",
-    "static/media/back.png": "/portfolio/static/media/back.b270d951.png",
-    "static/media/front.png": "/portfolio/static/media/front.a83b1acd.png",
-    "static/media/ipad2.png": "/portfolio/static/media/ipad2.ee13e17d.png",
-    "static/media/note2.png": "/portfolio/static/media/note2.da7c6d1a.png",
-    "static/media/pc-meelzer.png": "/portfolio/static/media/pc-meelzer.3f722dec.png"
+    "main.css": "/static/css/main.7f4e9a5e.chunk.css",
+    "main.js": "/static/js/main.929c6951.chunk.js",
+    "main.js.map": "/static/js/main.929c6951.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.2ef0e34a.chunk.js": "/static/js/2.2ef0e34a.chunk.js",
+    "static/js/2.2ef0e34a.chunk.js.map": "/static/js/2.2ef0e34a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9f192f69fc8007c94f907980712d9ea2.js": "/precache-manifest.9f192f69fc8007c94f907980712d9ea2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7f4e9a5e.chunk.css.map": "/static/css/main.7f4e9a5e.chunk.css.map",
+    "static/js/2.2ef0e34a.chunk.js.LICENSE.txt": "/static/js/2.2ef0e34a.chunk.js.LICENSE.txt",
+    "static/media/Meltammy_curriculo.pdf": "/static/media/Meltammy_curriculo.dd88fa0a.pdf",
+    "static/media/aboutme2.png": "/static/media/aboutme2.62ac87e8.png",
+    "static/media/back.png": "/static/media/back.b270d951.png",
+    "static/media/front.png": "/static/media/front.a83b1acd.png",
+    "static/media/ipad2.png": "/static/media/ipad2.ee13e17d.png",
+    "static/media/note2.png": "/static/media/note2.da7c6d1a.png",
+    "static/media/pc-meelzer.png": "/static/media/pc-meelzer.3f722dec.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.ea3d5762.chunk.js",
-    "static/css/main.4cdbf78a.chunk.css",
-    "static/js/main.9e454679.chunk.js"
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.2ef0e34a.chunk.js",
+    "static/css/main.7f4e9a5e.chunk.css",
+    "static/js/main.929c6951.chunk.js"
   ]
 }
