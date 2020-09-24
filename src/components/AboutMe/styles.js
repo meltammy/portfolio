@@ -77,7 +77,7 @@ p {
 }
 `
 
-export const CV = styled.button`
+export const CV = styled.a`
 color: white;
 width: 24vh;
 height: fit-content;
@@ -94,7 +94,7 @@ text-transform: uppercase;
 transition: 0.5s;
 box-shadow: 0px 2px 6px 0px black;
 outline: none;
-
+text-decoration: none;
 :hover{
 color: white;
 background-color: #E8B938;

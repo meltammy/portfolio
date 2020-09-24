@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, TextAboutMe, CV } from './styles'
+import Meltammy_curriculo from '../../cv/Meltammy_curriculo.pdf'
 
 function AboutMe(props) {
   return (
@@ -7,7 +8,7 @@ function AboutMe(props) {
       <TextAboutMe darkMode={props.darkMode} className='textAboutMe'>
         <h1> Melissa Tammy</h1>
         <p>Desenvolvedora Web Full Stack, estudante de Análise e Desenvolvimento de sistemas, ex-aluna de Ciências biológicas e fotógrafa por hobby.</p>
-        <a href="https://www.dropbox.com/s/h7zj9zio3gpvjyu/Meltammy_cv.pdf?dl=0" download><CV darkMode={props.darkMode}>CV em PDF</CV></a>
+        <CV darkMode={props.darkMode} href="https://firebasestorage.googleapis.com/v0/b/meltammy-fda67.appspot.com/o/Meltammy_curriculo.pdf?alt=media&token=6e8f4b88-721e-437c-8996-5640d68c0ead" download>CV em PDF</CV>
       </TextAboutMe>
     </Container>
   );
