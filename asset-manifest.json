@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f4e9a5e.chunk.css",
+    "main.css": "/static/css/main.835df3de.chunk.css",
     "main.js": "/static/js/main.929c6951.chunk.js",
     "main.js.map": "/static/js/main.929c6951.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
@@ -8,9 +8,9 @@
     "static/js/2.2ef0e34a.chunk.js": "/static/js/2.2ef0e34a.chunk.js",
     "static/js/2.2ef0e34a.chunk.js.map": "/static/js/2.2ef0e34a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9f192f69fc8007c94f907980712d9ea2.js": "/precache-manifest.9f192f69fc8007c94f907980712d9ea2.js",
+    "precache-manifest.1e17302c68d4781f02614567e4cd57db.js": "/precache-manifest.1e17302c68d4781f02614567e4cd57db.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.7f4e9a5e.chunk.css.map": "/static/css/main.7f4e9a5e.chunk.css.map",
+    "static/css/main.835df3de.chunk.css.map": "/static/css/main.835df3de.chunk.css.map",
     "static/js/2.2ef0e34a.chunk.js.LICENSE.txt": "/static/js/2.2ef0e34a.chunk.js.LICENSE.txt",
     "static/media/Meltammy_curriculo.pdf": "/static/media/Meltammy_curriculo.dd88fa0a.pdf",
     "static/media/aboutme2.png": "/static/media/aboutme2.62ac87e8.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.2ef0e34a.chunk.js",
-    "static/css/main.7f4e9a5e.chunk.css",
+    "static/css/main.835df3de.chunk.css",
     "static/js/main.929c6951.chunk.js"
   ]
 }
