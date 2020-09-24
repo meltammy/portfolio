@@ -16,8 +16,8 @@ function Projects(props) {
                     <Description>
                         <p>Protótipo baseado em plataformas de streaming de música, como Deezer e Spotify, desenvolvido com React.JS, Node.Js e MySQL.</p>
                         <ButtonContainer>
-                            <ButtonProject><a href="https://github.com/meltammy/Meelzer-front" >Front-end no GitHub</a></ButtonProject>
-                            <ButtonProject><a href="https://github.com/meltammy/Meelzer-back">Back-end no GitHub</a></ButtonProject>
+                            <ButtonProject href="https://github.com/meltammy/Meelzer-front">Front-end no GitHub</ButtonProject>
+                            <ButtonProject href="https://github.com/meltammy/Meelzer-back">Back-end no GitHub</ButtonProject>
                         </ButtonContainer>
                     </Description>
                 </TextContainer>
@@ -30,7 +30,7 @@ function Projects(props) {
                     </NameStack>
                     <Description className="align-description">
                         <p>Projeto Front-end baseado nas redes sociais Reddit, Tumblr e Instagram, desenvolvido com React.JS.</p>
-                        <ButtonProject><a href="https://github.com/meltammy/Melddit">Ver no GitHub</a></ButtonProject>
+                        <ButtonProject href="https://github.com/meltammy/Melddit">Ver no GitHub</ButtonProject>
                     </Description>
                 </TextContainer>
                 <Note className="projectImage"></Note>

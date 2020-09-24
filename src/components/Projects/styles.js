@@ -87,7 +87,7 @@ align-items: center;
 
 `
 
-export const ButtonProject = styled.button`
+export const ButtonProject = styled.a`
 width: 48%;
 height: fit-content;
 min-height:fit-content;
@@ -103,6 +103,8 @@ outline: none;
 color: white;
 font-size: 12pt;
 background-color: #105FB3;
+text-decoration: none;
+text-align: center;
 a{
     text-decoration:none;
     color:white;
