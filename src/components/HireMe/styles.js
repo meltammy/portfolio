@@ -10,7 +10,6 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-scroll-snap-align: start;
 text-align: center;
 color: ${props => (props.darkMode ? 'white' : 'black')};
 
