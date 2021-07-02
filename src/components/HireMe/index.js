@@ -1,8 +1,10 @@
 import React from 'react';
 import '../../App.scss'
 
-import { Container, ContactContainer } from './styles'
-import SocialBar from '../SocialBar/index'
+import { Container, ContactContainer, SocialBar } from './styles'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 function HireMe(props) {
     return (
@@ -19,7 +21,11 @@ function HireMe(props) {
                     Celular: (11) 95373-4273
                 </b>
             </ContactContainer>
-            <SocialBar darkMode={props.darkMode} class="social-hireMe"></SocialBar>
+            <SocialBar darkMode={props.darkMode}>
+                        <a href='https://www.linkedin.com/in/meltammy/' target="_blank"><LinkedInIcon style={{ fontSize: 30 }} /></a>
+                        <a href='https://github.com/meltammy' target="_blank"><GitHubIcon style={{ fontSize: 30 }} /></a>
+                        <a href='https://api.whatsapp.com/send?phone=5511953734273' target="_blank"><WhatsAppIcon style={{ fontSize: 30 }} /></a>
+            </SocialBar>
         </Container>
     );
 }

@@ -31,6 +31,7 @@ justify-content: center;
 align-items: center;
 text-align: center;
 padding: 5vw;
+font-weight: 400;
 h1{
   font-size: 42pt;
   text-transform: uppercase;

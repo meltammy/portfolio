@@ -16,7 +16,8 @@ background-color: ${props => (props.darkMode ? '#1d1d1d' : 'white')};
 padding-right: 2vw;
 border-bottom: 2px #ffbd4a solid;
 box-shadow: ${props => (props.darkMode ? '0 3px 11px black' : '0 3px 11px #000000a1')};
-a{
+span{
+    cursor: pointer;
     margin-left: 5vw;
     text-decoration: none;
     color: ${props => (props.darkMode ? 'white' : '#1d1d1d')}

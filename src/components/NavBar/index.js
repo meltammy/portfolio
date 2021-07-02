@@ -2,13 +2,17 @@ import React from 'react';
 
 import { Container } from './styles'
 
-function NavBar(props) {
 
+
+function NavBar(props) {
+    const goToView = (name) => {
+        const element = document.getElementById(name);
+        element && element.scrollIntoView({block: "center", behavior: "smooth"})
+    }
     return (
         <Container darkMode={props.darkMode} id='nav'>
-            <a href="#aboutMe">Quem sou</a>
-            <a href="#projects">Projetos</a>
-            <a href="#hireMe">Contato</a>
+            <span onClick={() => goToView('aboutMe')}>Quem sou</span>
+            <span onClick={() => goToView('hireMe')}>Contato</span>
         </Container>
     );
 }

@@ -54,3 +54,20 @@ margin-top:6vh;
 display:flex;
 flex-direction:column;
 `
+
+export const SocialBar = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+position: relative;
+height: 35vh;
+width: 250px;
+a{
+    text-decoration:none;
+    color: ${props => (props.darkMode ? 'white' : '#1d1d1d')};
+    :hover{
+        color: #ffdb4a;
+    }
+}
+`
