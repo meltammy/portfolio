@@ -67,9 +67,9 @@ function Links() {
         <Background darkMode={darkMode} />
         <LinksContainer>
           {links.map(item => (
-            <div class="button-container-1">
+            <div class="button-container-1" key={item.name}>
               <span class="mas">{item.label}</span>
-              <button id='work' type="button" name="Hover">{item.label}</button>
+              <button id='work' type="button" name="Hover" onClick={() => window.open(item.url)}>{item.label}</button>
             </div>
           ))}
         </LinksContainer>
